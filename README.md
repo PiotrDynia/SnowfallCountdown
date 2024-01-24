@@ -3,11 +3,10 @@ Small project in a festive snowy theme, accessing OpenWeather API to check weath
 
 ## Features
 
-### Change background
-### Set timer for the next skiing trip
-### Get beginner skiing tips
-### Check weather for a chosen city
-
+- Change background
+- Set timer for the next skiing trip
+- Get beginner skiing tips
+- Check weather for a chosen city
 
 ## Screenshots
 
