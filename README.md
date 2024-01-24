@@ -11,4 +11,4 @@ Small project in a festive snowy theme, accessing OpenWeather API to check weath
 
 ## Screenshots
 
-![Alt text] (Screenshot.png?raw=true)
+![Screenshot.png](Screenshot.png)
