@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter City"
+        android:inputType="text"
+        android:background="@color/gray"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        android:hint="Enter Country"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnCheckWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCountry"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orange"
+        android:text="Check Weather"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvWeatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheckWeather"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/black_background"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

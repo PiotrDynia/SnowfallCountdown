@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_one"
+    tools:context=".MainActivity">
+
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/gifSkiing"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/skiing_gif"
+        />
+
+    <ImageView
+        android:id="@+id/gifSnowboarding"
+        android:layout_toRightOf="@+id/gifSkiing"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/snowboarding_gif"
+        />
+
+    <Button
+        android:id="@+id/btnBackgroundSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:text="Switch Background"
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSetDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/black_background"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="0:00:0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orange"
+        android:text="Set date for your next skiing trip" />
+
+    <Button
+        android:id="@+id/btnSkiingTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSetDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Beginner skiing tips" />
+
+    <Button
+        android:id="@+id/btnWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSkiingTips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/amber"
+        android:text="Check weather" />
+
+    <ImageView
+        android:id="@+id/gifStiegl"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/btnWeather"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/stiegl_gif"
+        />
+
+</RelativeLayout>
